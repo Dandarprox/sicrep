@@ -1,0 +1,33 @@
+=flex($horizontal: 0, $vertical: 0)
+  display: flex
+  @if $horizontal == 1
+    justify-content: center
+  @else if $horizontal == 2
+    justify-content: flex-end
+
+  @if $vertical == 1
+    align-items: center
+  @else if $vertical == 2
+    align-items: flex-end
+
+%image-cover
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+%font-light
+  font-weight: 300
+
+%font-regular
+  font-weight: 400
+
+%font-bold
+  font-weight: 700
+
+%btn-bhv
+  cursor: pointer
+  transition: .3s
+
+=squared($lateral)
+  width: $lateral
+  height: $lateral
